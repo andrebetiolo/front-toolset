@@ -466,3 +466,27 @@ export function URIToObject(url) {
 
   return obj
 }
+
+/**
+* Download async javascript file
+* @param {url} string - Url of the script file
+* @returns {Promise}
+*/
+export function loadScript(url) {
+  return new Promise((resolve, reject) => {
+    var script = document.createElement("script");
+    script.async = "async";
+    script.type = "text/javascript";
+    script.src = path;
+    script.onload = script.onreadystatechange = (_, isAbort) => {
+      if (!script.readyState || /loaded|complete/.test(script.readyState)) {
+        if (isAbort)
+          reject(Error("Erro ao fazer o download do javascript"));
+        else
+          resolve();
+      }
+    };
+    script.onerror = () => { reject(); };
+    document.querySelector("head").appendChild(script);
+  });
+}

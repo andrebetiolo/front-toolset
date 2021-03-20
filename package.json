@@ -1,7 +1,7 @@
 {
   "name": "front-toolset",
   "version": "1.0.0",
-  "description": "Projeto com varias funçoes uteis para o desenvolvimento front-end",
+  "description": "Projeto com varias funções uteis para o desenvolvimento front-end",
   "main": "src/front-toolset.js",
   "directories": {
     "doc": "docs",

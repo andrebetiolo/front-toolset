@@ -2,11 +2,11 @@
 
 Projeto com varias funçoes uteis para o desenvolvimento front-end
 
-Link com os exemplos em: [https://eficiencia-fiscal.github.io/front-toolset/](https://eficiencia-fiscal.github.io/front-toolset/)
+Link com os exemplos em: [https://andrebetiolo.github.io/front-toolset/](https://andrebetiolo.github.io/front-toolset/)
 
 ## Install the repository
 ```shell
-npm install eficiencia-fiscal/front-toolset
+npm install andrebetiolo/front-toolset
 ```
 
 ## Run the tests
