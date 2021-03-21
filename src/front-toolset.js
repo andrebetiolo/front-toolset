@@ -446,13 +446,15 @@ export function objectToURLParams(obj) {
 }
 
 /**
-* Read the string and return a object of the params
-* @param {String}
+* Return object with params of the URL and return a object
 * @returns {Object}
 */
-export function URIToObject(url) {
-  if (url[0] == '?') {
-    url = url.substring(1)
+export function getURLParams() {
+  const urlSplit = window.location.href.split('?');
+  const url = urlSplit[1];
+
+  if (!url) {
+    return {};
   }
 
   const params = new URLSearchParams(url)
